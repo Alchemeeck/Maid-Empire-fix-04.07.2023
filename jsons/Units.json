@@ -67,8 +67,8 @@
 		"movement": 3,
 		"strength": 90,
 		"cost": 375,
-		"requiredTech": "Mobile Tactics"
-		"uniques": ["Can move after attacking"],
+		"requiredTech": "Electronics"
+		"uniques": ["Can move after attacking"]
 		"promotions": ["Maid Trooper", "March"]
 	},
 	{
@@ -83,8 +83,8 @@
 		"cost": 320,
 		"requiredTech": "Dynamite",
 		"upgradesTo": "Rocket Artillery",
-		"uniques": ["+[200]% Strength vs [City]","No defensive terrain bonus",
-			"Must set up to ranged attack","Limited Visibility","Ranged attacks may be performed over obstacles"],
+		"uniques": ["+[200]% Strength <vs [City]> <when attacking>", "No defensive terrain bonus",
+			"Must set up to ranged attack","-1 Sight","Ranged attacks may be performed over obstacles"],
 		"promotions": ["Maid Trooper", "Medic"],
 	},
 	{
@@ -95,7 +95,7 @@
 		"movement": 5,
 		"strength": 70,
 		"cost": 375,
-		"requiredTech": "Combined Arms",
+		"requiredTech": "Electronics",
 		"requiredResource": "Oil",
 		"upgradesTo": "Modern Armor",
 		"uniques": ["Can move after attacking","Ignores terrain cost", "[60]% chance to intercept air attacks"],
@@ -115,8 +115,8 @@
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
 		"upgradesTo": "MF 14",
-		"uniques": ["[100]% chance to intercept air attacks", "+[150]% Strength vs [Bomber]",
-			"6 tiles in every direction always visible"],
+		"uniques": ["[100]% chance to intercept air attacks", "+[150]% Strength <vs [Bomber] units>",
+			"+4 Sight","Can see over obstacles"],
 		"promotions": ["Bombardment I"],
 		"attackSound": "shot"
 		
@@ -133,7 +133,8 @@
 		"cost": 375,
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
-		"promotions": ["Bombardment I"],
+		"uniques": ["+[100]% Strength <vs cities> <when attacking>"]
+		"promotions": ["Bombardment I", "Bombardment II"],
 		"upgradesTo": "Stealth Bomber",
 		"attackSound": "shot"
 	},
@@ -151,8 +152,8 @@
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
 		"uniques": ["[100]% chance to intercept air attacks",
-			"+[150]% Strength vs [Bomber]",
-			"6 tiles in every direction always visible"],
+			"+[150]% Strength <vs [Bomber] units>",
+			"+4 Sight", "Can see over obstacles"],
 		"promotions": ["Bombardment I"],
 		"attackSound": "shot"
 	},
@@ -166,8 +167,8 @@
 		"interceptRange": 2,
 		"cost": 375,
 		"requiredTech": "Combustion",
-		"uniques": ["Can attack submarines", "[40]% chance to intercept air attacks", "+[50]% Strength vs [City]",
-			"May withdraw before melee ([50]%)", "+[100]% Strength vs [WaterSubmarine]", "Can move after attacking"],
+		"uniques": ["Can attack submarines", "[40]% chance to intercept air attacks", "+[50]% Strength <vs cities> <when attacking>", 
+			"May withdraw before melee ([50]%)", "+[100]% Strength <vs [Water] units>", "+[100]% Strength <vs [Submarine] units>", "Can move after attacking"],
 	},
 	{
 		"name": "Maid Cruiser",
@@ -182,7 +183,7 @@
 		"requiredTech": "Electronics",
 		"upgradesTo": "Missile Cruiser",
 		"uniques": ["Can attack submarines", "[60]% chance to intercept air attacks",
-			"+[100]% Strength vs [WaterSubmarine]", "Ranged attacks may be performed over obstacles"],
+			"+[100]% Strength <vs [Water] units>",  "Ranged attacks may be performed over obstacles"],
 		"promotions": ["Targeting I"]
 	},
 	{
@@ -190,8 +191,12 @@
 		"unitType": "Civilian",
 		"uniqueTo": "Maid Empire",
 		"replaces": "Great General",
-		"uniques": ["Can start an [8]-turn golden age", "Bonus for units in 2 tile radius 15%", "Can construct [Citadel]",
-			"Great Person - [War]", "Unbuildable", "[+1] Visibility Range", "Invisible to others"],
+		"uniques": ["Can start an [8]-turn golden age", "+15% Strength bonus for Military units within 2 tiles", "Can construct [Citadel]",
+			"Great Person - [War]", "Unbuildable", "1 Sight", "Invisible to others"],
 		"movement": 3
-	},
+	}
 ]
+
+]
+]
+
